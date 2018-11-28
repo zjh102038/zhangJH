@@ -1,0 +1,135 @@
+@import 'common.scss';
+@import 'mixin.scss';
+html,
+body {
+    width: 100%;
+    height: 100%
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    font-size: pxTorem(12px);
+    display: flex;
+    flex-direction: column;
+    .header {
+        width: 100%;
+        height: pxTorem(44px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 pxTorem(10px);
+        .items {
+            width: pxTorem(80px);
+            border: 1px solid #ccc;
+            height: 70%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: pxTorem(40px);
+            span {
+                width: 50%;
+                font-size: pxTorem(18px);
+                text-align: center
+            }
+        }
+    }
+    .main {
+        flex: 1;
+        width: 100%;
+        overflow: hidden;
+        .search {
+            width: 100%;
+            height: pxTorem(35px);
+            background: #ddd;
+            border-radius: pxTorem(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                font-size: pxTorem(14px)
+            }
+            input {
+                width: 90%;
+                height: 100%;
+                padding: pxTorem(10px);
+                font-size: pxTorem(14px)
+            }
+        }
+        .include {
+            width: 100%;
+            .swiper-container {
+                width: 100%;
+                .swiper-wrapper {
+                    width: 100%;
+                    .swiper-slide {
+                        width: 100%;
+                        .icon-items {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            text-align: center;
+                        }
+                        .includes-items {
+                            width: 100%;
+                            .foods {
+                                width: 100%;
+                                background: firebrick;
+                                padding: pxTorem(10px);
+                                h4 {
+                                    font-size: pxTorem(16px);
+                                    color: white
+                                }
+                                .eats {
+                                    width: 100%;
+                                    padding: pxTorem(10px) 0;
+                                    background: #fff;
+                                    dl {
+                                        float: left;
+                                        width: 30%;
+                                        dt {
+                                            width: 100%;
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        width: 100%;
+        height: pxTorem(44px);
+        background: aqua;
+        padding: pxTorem(10px);
+        ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            span {
+                font-size: pxTorem(20px)
+            }
+        }
+    }
+}
